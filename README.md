@@ -5,20 +5,20 @@ Welcome to the **Web Design and Development** repository! This repo provides a s
 ### 📌 Levels Breakdown  
 
 #### **HTML Levels**  
-1. **Level 1** – Basics (How to comment, basic structure)  
-2. **Level 2** – All basic tags (headings, paragraphs, lists, links, etc.)  
-3. **Level 3** – Viewing and understanding source code of different websites  
-4. **Level 4** – Semantic tags (header, main, footer)  
-5. **Level 5** – Forms and iframes  
+ **Level 1** – Basics (How to comment, basic structure)  
+ **Level 2** – All basic tags (headings, paragraphs, lists, links, etc.)  
+ **Level 3** – Viewing and understanding source code of different websites  
+ **Level 4** – Semantic tags (header, main, footer)  
+ **Level 5** – Forms and iframes  
 
 #### **CSS Levels**  
-1. **Level 1** – Inline, internal, external CSS, and basic selectors  
-2. **Level 2** – Background properties (colors, images), height, width, visibility  
-3. **Level 3** – Text decoration properties, font sizes, weight, font family  
-4. **Level 4** – Box model (padding, margin)  
-5. **Level 5** – Units (vh, vw, %, em, rem), display (inline, block, inline-block)  
-6. **Level 6** – Flexbox, Grid, and Media Queries  
-7. **Level 7** – Animations and Transitions  
+ **Level 1** – Inline, internal, external CSS, and basic selectors  
+ **Level 2** – Background properties (colors, images), height, width, visibility  
+ **Level 3** – Text decoration properties, font sizes, weight, font family  
+ **Level 4** – Box model (padding, margin)  
+ **Level 5** – Units (vh, vw, %, em, rem), display (inline, block, inline-block)  
+ **Level 6** – Flexbox, Grid, and Media Queries  
+ **Level 7** – Animations and Transitions  
 
 ### 🛠 How to Use  
 - Navigate through **HTML** and **CSS** levels for step-by-step learning.  
