@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/js/javascrip/style.css">
+    <style>
+      
+    </style>
+</head>
+
+<body>
+  
+    <button class ="btn1">click me</button>
+    <button class ="btn2">Testing event listener</button>
+
+    
+<script>
+    //event handling
+    let btn = document.querySelector(".btn1");
+    let a = 0;
+    btn.onclick =(e)=>{
+    a = a + 1;
+    console.log(`clicked ${a}`);
+
+    //Event objects (speacial obj have details about event)
+    console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(e.clientX,e.clientY)
+    }
+    //event listener
+    let btn2 = document.querySelector(".btn2");
+    btn2.addEventListener("click", ()=>{
+        console.log("event listener 1");   
+    })
+    btn2.addEventListener("click", ()=>{
+        console.log("event listener 2");   
+    })
+    btn2.addEventListener("click", ()=>{
+        console.log("event listener 3");   
+    })
+    
+    
+
+
+</script>
+</body>
+</html>
