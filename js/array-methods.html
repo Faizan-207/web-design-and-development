@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+//higher order function(a function that pass another function as argument)
+//A function having callback function as parameter 
+
+//For each is more cleaner way to loop through an array
+    let arr = ["apple","banana","orange"];
+    arr.forEach((val,idx)=>{
+        console.log(`${idx}: ${val}`);
+    })
+// foreach perform operation on existing array does not return new array
+    let numbers = [10,21,30,41]
+    numbers.forEach((num,idx,arr)=> {
+        numbers[idx] *= 2;
+        console.log(idx,num,arr)
+
+    })
+
+// map create a new array 
+    let double = numbers.map(num => num * 4);
+    console.log(double)
+    console.log(numbers)
+
+    let users = [
+        {name: "Faizan" ,roll_no : 207},
+        {name: "toqeer" ,roll_no : 206},
+        {name: "abdullah" ,roll_no : 250}
+]
+    let names = users.map(user => user.name )
+    console.log(names)
+
+//filter function also returns
+    let counting = [1,2,3,4,5,6,7,8];
+    let evens = counting.filter((num) => {
+        return num % 2 === 0;
+        
+    });
+console.log(evens)
+
+//reduced function
+    
+    let sum = counting.reduce((acc,num)=>{
+        return acc + num
+    },0);
+    console.log("Sum is :",sum)
+
+    let max = counting.reduce((acc,num)=> {
+        if (num> acc){
+            return num;
+        }
+        else{
+            return acc;
+        }
+        
+    },counting[0])
+
+    console.log("maximun is :",max)
+
+
+    let people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 25 }
+];
+
+    let ageGroups = people.reduce((acc,person)=> {
+        if (!acc[`${person.age}`]){
+            acc[person.age] = [];
+        }
+        acc[person.age].push(person.name);
+        return acc;
+    },{})
+
+console.log(ageGroups);
+
+
+</script>
+</html>
