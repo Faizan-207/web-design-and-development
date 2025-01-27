@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 10px;
+    gap: 20px;
+    font-size: 20px;
+    a{
+        text-decoration: none;
+    }
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    gap: 25px;
+}
+.search{
+    display: flex;
+    border: 1px solid lightgray;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    height: 50px;
+    width: 650px; 
+    gap: 10px;
+    
+    
+}
+.search:hover{
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.212);
+}
+
+
+.search_text{
+    width: 515px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    img {
+        height: 114px;
+    }
+
+}
+.buttons{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    button{
+        height: 40px;
+        width: 130px;
+        font-size: 15px;
+        color: rgba(20, 20, 20, 0.842);
+        border: none;
+        border-radius: 3px;
+        
+    }
+    button:hover{
+        border: 1px solid lightgray;
+        cursor: pointer;
+    }
+}
+.language{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+.footer{
+    font-size: 17px;
+    background-color: rgba(211, 211, 211, 0.466);
+        a {
+        text-decoration: none;
+        color: rgba(20, 20, 20, 0.747);
+    }
+}
+.footer_top{
+    height: 40px;
+    margin-left: 10px;
+    padding-top: 10px;
+    color:rgba(20, 20, 20, 0.747);
+}
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    border-top: rgba(20, 20, 20, 0.37) solid 1px;
+    
+    .bottom_links_left{
+        margin-left: 15px;
+        display: flex;
+        gap: 20px;
+
+    }    
+    .bottom_links_right{
+        margin-right: 15px;
+        display: flex;
+        gap: 20px;
+    }    
+}
+
