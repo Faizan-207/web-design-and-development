@@ -1,0 +1,47 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+.headerBtn{
+    background-color: #2699fb ;
+}
+
+.banner-content h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.banner-content span{
+    color: #2699fb;
+}
+.banner-content p{
+    font-size: 19px;
+}
+.banner-content ul{
+    list-style: none;
+    font-size: 19px;
+}
+.banner-content li i {
+    color: #2699fb;
+}
+.bannercontentBtn button{
+    width: 50%;
+}
+.bannercontentBtn button:first-child{
+    background-color :#2699fb;
+}
+.bannerBtn{
+    background-color: #cfcdcda6;
+    border: 1px solid rgb(17, 17, 17,0.7);
+    border-radius: 6px;
+    padding: 6px 12px ;
+}
+.bannerform{
+    padding: 30px;
+}
+.bannerbtn{
+    width: 100%;
+    
+}
+/* .bannerform{
+   
+    border: 2px solid black;
+} */

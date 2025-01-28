@@ -1,0 +1,33 @@
+@media only screen and (min-width:200px) and (max-width:575px) {
+    .btn-outer{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        left: 0px;
+        background-color:white;
+        padding: 5px,0;
+        justify-content: center !important;
+        z-index: 9999 !important;
+    }
+    .banner-content h1{
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 32px;
+    }
+    .banner-content h1 br {
+        display: none !important;
+    }
+    .banner-content p,.banner-content ul{
+        font-size: 14px !important;
+    }
+    .bannercontentBtn{
+        flex-direction: column;
+    }
+    .bannercontentBtn button{
+        width: 100% !important;
+    }
+    .bannerform{
+        padding: 15px;
+
+    }
+}
