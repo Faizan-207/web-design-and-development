@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Login Form</h1>
+    <form action="/dex.html">
+      <table style="margin: auto; border-spacing: 10px">
+        <tr>
+          <td><label for="username">UserName:</label></td>
+          <td>
+            <input type="text" name="username" id="username" required="true" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td>
+            <input type="email" name="email" id="email" required="true" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="passward">Passward:</label></td>
+          <td>
+            <input
+              type="password"
+              name="password"
+              id="passward"
+              required="true"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="c_passward">Confirm Passward:</label></td>
+          <td>
+            <input
+              type="password"
+              name="confirm passward"
+              id="c_passward"
+              required="true"
+            />
+          </td>
+        </tr>
+      </table>
+      <div style="text-align: center">
+        <input type="submit" value="Login" />
+        <input type="reset" name="reset" value="reset" />
+      </div>
+    </form>
+  </body>
+</html>
