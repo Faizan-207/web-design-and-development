@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pete's Pizza Delivery</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Pete's Pizza Delivery</h1>
+    <h2 style="text-align: center">Online Order Form</h2>
+    <form action="/customer Details">
+      <table style="margin: auto; border-spacing: 1px">
+        <tr>
+          <td><label for="name">*Name :</label></td>
+          <td><input type="text" id="name" required="true" /></td>
+          <td><label for="telno">*Tel :</label></td>
+          <td><input type="number" id="telno" required="true" /></td>
+        </tr>
+        <tr>
+          <td><label for="address">*Address :</label></td>
+          <td><input type="text" id="address" required="true" /></td>
+          <td><label for="email">*Email:</label></td>
+          <td><input type="email" id="email" required="true" /></td>
+        </tr>
+        <tr>
+          <td><label for="City">*City/Town :</label></td>
+          <td><input type="text" id="City" required="true" /></td>
+        </tr>
+        <tr>
+          <td><label for="code">*Postal Code :</label></td>
+          <td><input type="number" id="code" required="true" /></td>
+        </tr>
+      </table>
+      <p style="text-align: center">* required fields</p>
+      <table style="margin: auto; border-spacing: 10px">
+        <tr>
+          <td><b>Topping</b></td>
+          <td><b>Size</b></td>
+          <td><b>Extras</b></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="radio"
+              name="topping"
+              value="Margherita"
+              id="margherita"
+            />
+            <label for="margherita">Margherita</label> <br />
+            <input type="radio" name="topping" value="Four seasons" id="four" />
+            <label for="four">Four Seasons</label> <br />
+            <input type="radio" name="topping" value="Meat Feast" id="meat" />
+            <label for="meat">Meat Feast</label>
+          </td>
+
+          <td>
+            <input type="radio" name="Size" value="Large" id="large" />
+            <label for="large">Large</label> <br />
+            <input type="radio" name="Size" value="Medium" id="medium" />
+            <label for="medium">Medium</label> <br />
+            <input type="radio" name="Size" value="Small" id="small" />
+            <label for="small">small</label>
+          </td>
+
+          <td>
+            <input
+              type="checkbox"
+              name="Extras"
+              value="Mushrooms"
+              id="Mushrooms"
+            />
+            <label for="Mushrooms">Mushrooms</label> <br />
+            <input
+              type="checkbox"
+              name="Extras"
+              value="Green pappers"
+              id="gpapper"
+            />
+            <label for="gpapper">Green Pappers</label> <br />
+            <input type="checkbox" name="Extras" value="Anchovies" id="fish" />
+            <label for="fish">Anchovies</label> <br />
+            <input
+              type="checkbox"
+              name="Extras"
+              value="Extra Cheese"
+              id="cheese"
+            />
+            <label for="cheese">Extra cheese</label>
+          </td>
+        </tr>
+      </table>
+      <table style="margin: auto; border-spacing: 20px">
+        <tr>
+          <td><label for="time">Preffered Delivery Time:</label></td>
+          <td>
+            <select name="Time" id="time">
+              <option value="--|--">--|--</option>
+              <option value="12:00">12:00</option>
+              <option value="03:00">03:00</option>
+              <option value="06:00">06:00</option>
+              <option value="09:00">09:00</option>
+              <option value="24:00">24:00</option>
+            </select>
+          </td>
+        </tr>
+        <td><label for="instruction">Delivery instrustion:</label></td>
+        <td>
+          <textarea
+            name="Description"
+            id="instruction"
+            cols="20"
+            rows="3"
+          ></textarea>
+        </td>
+      </table>
+      <div style="text-align: center">
+        <input type="submit" value="Submit Order" />
+      </div>
+    </form>
+  </body>
+</html>
