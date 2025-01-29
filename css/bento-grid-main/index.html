@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bento grid</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        border: 1px solid red;
+      }
+
+      .contianer {
+        display: grid;
+        grid-template-columns: 1fr 150px 150px 1fr;
+        grid-template-rows: 100px 100px 100px 100px;
+        /* grid-template-rows: repeat(4, 150px);s */
+        grid-gap: 20px;
+      }
+      .item_1 {
+        background-color: rgba(240, 206, 212, 0.692);
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .item_2 {
+        background-color: rgba(33, 19, 223, 0.877);
+        grid-column: 2/4;
+        grid-row-start: 1;
+        grid-row-end: span 2.5;
+        /* height: 20fr; */
+        grid-template-columns: 70px;
+        /* padding-bottom: 180px; */
+      }
+      .item_3 {
+        background-color: rgba(91, 183, 219, 0.692);
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      .item_4 {
+        background-color: rgba(128, 82, 90, 0.692);
+        grid-row: 3/4;
+        grid-column: 2/3;
+        /* padding-top: 100px; */
+      }
+      .item_5 {
+        background-color: rgba(37, 143, 63, 0.692);
+        grid-row: 3/4;
+        grid-column: 3/4;
+      }
+      .item_6 {
+        background-color: rgba(212, 12, 12, 0.692);
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+      .item_7 {
+        background-color: rgba(184, 154, 57, 0.692);
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+      .item_8 {
+        background-color: rgba(55, 224, 126, 0.692);
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column: 3/-1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contianer">
+      <div class="item_1">Cell1</div>
+      <div class="item_2">Cell2</div>
+      <div class="item_3">Cell3</div>
+      <div class="item_4">Cell4</div>
+      <div class="item_5">Cell5</div>
+      <div class="item_6">Cell6</div>
+      <div class="item_7">Cell7</div>
+      <div class="item_8">Cell8</div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Faizan ali</a>.
+    </div>
+  </body>
+</html>
