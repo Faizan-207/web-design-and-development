@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/js/javascrip/style.css">
+    <style>
+      .light{
+        background-color: #fff;
+        color: black;
+      }
+      .dark{
+        background-color: black;
+        color: white;
+      }
+    </style>
+</head>
+
+<body >
+  
+   <button id="btn">Switch Dark</button>
+   <p>Welocme to my youtube channel</p>
+
+    
+<script>
+    mode = "light";
+    body = document.querySelector("body");
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click", ()=>{
+        if (mode ==="light"){
+            body.classList.add("dark");
+            body.classList.remove("light");
+            mode = "dark";
+            
+        }
+        else{
+            body.classList.add("light");
+            body.classList.remove("dark");
+            mode ="light";
+            
+        }
+        console.log(mode);
+    })
+    
+    
+
+
+</script>
+</body>
+</html>
