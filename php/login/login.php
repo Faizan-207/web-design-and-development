@@ -17,6 +17,6 @@ if ($result){
 <?php
 
 
-    echo "Hello world";
+    echo "Hello";
 
 ?>
