@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EventMasters</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: white;
+        }
+
+        /* Header Section */
+        header {
+            background: #023047;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 1rem 0;
+        }
+
+        /* Contact Information Cards */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 1rem;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card i {
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            background: #219EBC;
+            /* Add icon using pseudo-element or icon font */
+        }
+
+        .info-card h3 {
+            color: #023047;
+            margin: 0 0 1rem 0;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .contact-form h2 {
+            color: #023047;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #219EBC;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: #FFB703;
+            color: #023047;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #f4a500;
+        }
+
+        /* Map Section */
+        .map {
+            padding: 3rem 1rem;
+            background: rgba(33, 158, 188, 0.1);
+        }
+
+        .map h2 {
+            color: #023047;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 3rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq h2 {
+            color: #023047;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .faq-item {
+            background: white;
+            border-left: 4px solid #219EBC;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #023047;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 0.5rem;
+            background: #219EBC;
+            padding: 0.5rem;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #FFB703;
+            color: #023047;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .form-group {
+                flex-direction: column;
+            }
+            
+            .info-card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Let's Create Magic Together!</h1>
+        <p>Our team is ready to bring your vision to life</p>
+    </header>
+
+    <section class="contact-info">
+        <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <h3>Call Us</h3>
+            <p>+1 (555) 123-4567</p>
+            <p>Mon-Fri: 9am - 6pm EST</p>
+        </div>
+
+        <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>events@elite.com</p>
+            <p>Response within 24 hours</p>
+        </div>
+
+        <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Visit Us</h3>
+            <p>123 Event Avenue</p>
+            <p>New York, NY 10001</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Plan Your Perfect Event</h2>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name*" required>
+                <input type="email" name="email" placeholder="Your Email*" required>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <select name="event-type" required>
+                    <option value="">Event Type*</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="social">Social Gathering</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <textarea name="message" placeholder="Tell Us About Your Event*" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Start Planning →</button>
+        </form>
+    </section>
+
+    <section class="map">
+        <h2>Our Headquarters</h2>
+        <iframe src="https://www.google.com/maps/embed?..." 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© 2023 Elite Events. All rights reserved.</p>
+    </footer>
+</body>
+</html>
