@@ -7,7 +7,7 @@ Welcome to the **Web Design and Development** repository! This repo provides a s
 #### **HTML Levels**  
  **Level 1** – Basics (How to comment, basic structure)  
  **Level 2** – All basic tags (headings, paragraphs, lists, links, etc.)  
- **Level 3** – Img, multimedia and table 
+ **Level 3** – Img, multimedia and table                             
  **Level 4** – Semantic tags (header, main, footer)  
  **Level 5** – Forms and iframes  
 
