@@ -7,7 +7,7 @@ Welcome to the **Web Design and Development** repository! This repo provides a s
 #### **HTML Levels**  
  **Level 1** – Basics (How to comment, basic structure)  
  **Level 2** – All basic tags (headings, paragraphs, lists, links, etc.)  
- **Level 3** – Viewing and understanding source code of different websites  
+ **Level 3** – Img, multimedia and table .                            
  **Level 4** – Semantic tags (header, main, footer)  
  **Level 5** – Forms and iframes  
 
@@ -18,7 +18,17 @@ Welcome to the **Web Design and Development** repository! This repo provides a s
  **Level 4** – Box model (padding, margin)  
  **Level 5** – Units (vh, vw, %, em, rem), display (inline, block, inline-block)  
  **Level 6** – Flexbox, Grid, and Media Queries  
- **Level 7** – Animations and Transitions  
+ **Level 7** – Animations and Transitions 
+ 
+ #### **Javascript Levels** 
+  **Level 1** – 
+
+ **Level 2** –  
+ **Level 3** – 
+ **Level 4** – 
+ **Level 5** – 
+ **Level 6** –   
+ **Level 7** – 
 
 ### 🛠 How to Use  
 - Navigate through **HTML** and **CSS** levels for step-by-step learning.  
