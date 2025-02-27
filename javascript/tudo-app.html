@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            margin: 5px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .checked-task {
+            text-decoration: line-through;
+            color: green;
+        }
+        button {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        let tasks = []; // Array to store tasks
+
+        function addTask() {
+            let taskInput = document.getElementById("taskInput"); // Get input field
+            let taskText = taskInput.value.trim(); // Get task text
+
+            if (taskText === "") {
+                alert("Task cannot be empty!"); // Show alert if input is empty
+                return;
+            }
+
+            tasks.push(taskText); // Simply push the task text
+            taskInput.value = ""; // Clear input field
+
+            displayTasks(); // Update the task list
+        }
+
+        function displayTasks() {
+            let taskList = document.getElementById("taskList");
+            taskList.innerHTML = ""; // Clear existing tasks
+
+            tasks.forEach((task, index) => {
+                let li = document.createElement("li");
+                li.innerHTML = `
+                    <span>${task}</span> 
+                    <button onclick="checkTask(this)">✔</button>
+                    <button onclick="removeTask(${index})">❌</button>
+                `;
+                taskList.appendChild(li);
+            });
+        }
+
+        function checkTask(button) {
+            let li = button.parentElement; // Get the parent <li> of the clicked button
+            li.classList.toggle("checked-task"); // Toggle the "checked-task" class
+        }
+
+        function removeTask(index) {
+            tasks = tasks.filter((_, i) =>{
+                return  i !== index}); // Remove task from array
+            displayTasks(); // Update the task list
+        }
+    </script>
+
+</body>
+</html>
