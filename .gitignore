@@ -1,1 +1,22 @@
-.env
+#For worldpress 
+
+# Ignore WordPress Uploads
+wp-content/uploads/
+
+# Ignore Cache
+wp-content/cache/
+
+# Ignore Core Files (optional)
+wp-admin/
+wp-includes/
+
+# Ignore Node & Composer dependencies
+node_modules/
+vendor/
+
+# Ignore Database Files
+*.sql
+*.env
+
+# Ignore Personal Config
+wp-config.php
